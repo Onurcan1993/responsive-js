@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | [Blogr]</title>
+
+ 
+<style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+</style>
+
+</head>
+<body>
+
+    <div class="header">
+      <div class="header-base">
+        <div class="header-bg ">
+          <div class="header-title flex-mb">
+            <div class="header-title-left flex pd">
+            
+              <div class="three-elem flex-center pd">
+
+                <span class="blogr family-ubuntu u-700 color-w">
+                  Blogr
+                </span>
+
+                
+                <span class="product1  cr-pointer family-ubuntu u-500 pd size change color-w ">
+                  <span class="product1-act pd-3">Product</span> <svg xmlns="http://www.w3.org/2000/svg"  class="product1-elem-h-down" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".85" d="M1 1l4 4 4-4"/></svg>
+                  <svg class="product1-elem-h-up" width="16" height="16" viewBox="0 0 24 24" fill="#f93434" xmlns="http://www.w3.org/2000/svg"><path d="M17.6569 16.2427L19.0711 14.8285L12.0001 7.75739L4.92896 14.8285L6.34317 16.2427L12.0001 10.5858L17.6569 16.2427Z" fill="currentColor"/></svg>
+
+                </span>
+                <div class="product1-elem-h Hover header-bg-item flex-column-header  ps-relative-pr">
+
+                  <span class="overview cr-pointer Hover family-ubuntu u-500 pd-content size color-b-soft">
+                      Overview
+                  </span>
+                  <span class="pricing cr-pointer Hover family-ubuntu u-500 pd-content size color-b-soft">
+                      Pricing
+                  </span>
+                  <span class="marketplace cr-pointer Hover family-ubuntu u-500 pd-content size color-b-soft">
+                      Marketplace
+                  </span>
+                  <span class="features cr-pointer Hover family-ubuntu u-500 pd-content size color-b-soft">
+                      Features
+                  </span>
+                  <span class="integrations cr-pointer Hover family-ubuntu u-500 pd-content size color-b-soft">
+                      Integrations
+                  </span>
+
+                </div>
+              
+                <span class="company1  cr-pointer family-ubuntu u-500 pd size change color-w">
+                  <span class="company1-act pd-3">Company</span><svg xmlns="http://www.w3.org/2000/svg" class="m-i company1-elem-h-down" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".85" d="M1 1l4 4 4-4"/></svg>
+                  <svg class="company1-elem-h-up" width="16" height="16" viewBox="0 0 24 24" fill="#f93434" xmlns="http://www.w3.org/2000/svg"><path d="M17.6569 16.2427L19.0711 14.8285L12.0001 7.75739L4.92896 14.8285L6.34317 16.2427L12.0001 10.5858L17.6569 16.2427Z" fill="currentColor"/></svg>                  
+                </span>
+
+                <div class="company1-elem-h header-bg-item flex-column-header  ps-relative-cm">
+
+                  <span class="overview Hover cr-pointer family-ubuntu u-500 pd-content size color-b-soft">
+                      About
+                  </span>
+                  <span class="pricing Hover cr-pointer family-ubuntu u-500 pd-content size color-b-soft">
+                      Team
+                  </span>
+                  <span class="marketplace Hover cr-pointer family-ubuntu u-500 pd-content size color-b-soft">
+                      Blog
+                  </span>
+                  <span class="features Hover cr-pointer family-ubuntu u-500 pd-content size color-b-soft">
+                      Careers
+                  </span>
+                </div>
+  
+              
+                <span class="connect1  cr-pointer family-ubuntu u-500 pd size change color-w m-i">
+                  <span class="connect1-act pd-3">Connect</span><svg xmlns="http://www.w3.org/2000/svg" class="m-i connect1-elem-h-down" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+                  <svg class="connect1-elem-h-up" width="16" height="16" viewBox="0 0 24 24" fill="#f93434" xmlns="http://www.w3.org/2000/svg"><path d="M17.6569 16.2427L19.0711 14.8285L12.0001 7.75739L4.92896 14.8285L6.34317 16.2427L12.0001 10.5858L17.6569 16.2427Z" fill="currentColor"/></svg>
+                </span>
+                <div class="connect1-elem-h header-bg-item flex-column-header  ps-relative-co">
+
+                  <span class="overview cr-pointer Hover family-ubuntu u-500 pd-content size color-b-soft">
+                      Contact
+                  </span>
+                  <span class="pricing cr-pointer Hover family-ubuntu u-500 pd-content size color-b-soft">
+                      Newsletter
+                  </span>
+                  <span class="marketplace cr-pointer Hover family-ubuntu u-500 pd-content size color-b-soft">
+                      Linkedn
+                  </span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="header-title-right flex pd">
+
+              <span class="product cr-pointer family-ubuntu u-500 pd size color-w change" >
+                Login
+              </span>
+
+              <span class="product cr-pointer sign family-ubuntu u-500 pd-r-l size btn-white change" >
+                Sign Up
+              </span>
+
+            </div>
+            <svg width="32" height="18" class="btn-ham cr-pointer" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/></g></svg>
+
+            <svg width="26" height="26" class="btn-close cr-pointer" xmlns="http://www.w3.org/2000/svg"><path d="M23.607.98l1.414 1.413L14.414 13l10.607 10.607-1.414 1.414L13 14.414 2.393 25.021.98 23.607 11.586 13 .98 2.393 2.393.98 13 11.586 23.607.98z" fill="#FFF" fill-rule="evenodd"/></svg>
+          </div>
+          
+          <div class="header-main flex-column pd ">
+
+            <span class="header-main-title family-overpass o-600 color-w pd mobil-main-size mobil-mr">
+              A modern publishing platform 
+            </span>
+
+            <span class="main-title-text color-w family-overpass o-300 mobil-mr">
+              Grow your audience and build your online brand
+            </span>
+
+            <span class="main-btns flex pd mobil-mr">
+                <span class="firts-btn sign pd-r-l cr-pointer family-overpass o-600 btn-white m-r-l-10 m-s">
+                  Start for Free
+                </span>
+                <span class="second-btn pd-r-l learn cr-pointer family-overpass o-600 size color-w m-s">
+                  Learn More
+                </span>
+            </span>
+
+          </div>
+          <div class="container">
+            <div class="menu flex-column">
+            <div class="elements flex-column">
+                  <span class="product cr-pointer family-ubuntu u-500 pd size color-b ">
+                    Product <svg xmlns="http://www.w3.org/2000/svg" class="product-elem-down" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+                    <svg class="product-elem-up" width="16" height="16" viewBox="0 0 24 24" fill="#f93434" xmlns="http://www.w3.org/2000/svg"><path d="M17.6569 16.2427L19.0711 14.8285L12.0001 7.75739L4.92896 14.8285L6.34317 16.2427L12.0001 10.5858L17.6569 16.2427Z" fill="currentColor"/></svg>
+
+                  </span>
+        
+                  <div class="product-elem flex-column">
+
+                    <span class="overview cr-pointer family-ubuntu u-500 pd-content size color-b-soft">
+                        Overview
+                    </span>
+                    <span class="pricing cr-pointer family-ubuntu u-500 pd-content size color-b-soft">
+                        Pricing
+                    </span>
+                    <span class="marketplace cr-pointer family-ubuntu u-500 pd-content size color-b-soft">
+                        Marketplace
+                    </span>
+                    <span class="features cr-pointer family-ubuntu u-500 pd-content size color-b-soft">
+                        Features
+                    </span>
+                    <span class="integrations cr-pointer family-ubuntu u-500 pd-content size color-b-soft">
+                        Integrations
+                    </span>
+                    <!-- Overview
+                    Pricing
+                    Marketplace
+                    Features
+                    Integrations -->
+
+                  </div>
+
+                  <span class="company cr-pointer family-ubuntu u-500 pd size color-b ">
+                    Company<svg xmlns="http://www.w3.org/2000/svg" class="m-i company-elem-down" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+                    <svg class="company-elem-up" width="16" height="16" viewBox="0 0 24 24" fill="#f93434" xmlns="http://www.w3.org/2000/svg"><path d="M17.6569 16.2427L19.0711 14.8285L12.0001 7.75739L4.92896 14.8285L6.34317 16.2427L12.0001 10.5858L17.6569 16.2427Z" fill="currentColor"/></svg>
+                  </span>
+                  
+                  <div class="company-elem flex-column">
+
+                    <span class="overview cr-pointer family-ubuntu u-500 pd-content size color-b-soft">
+                        About
+                    </span>
+                    <span class="pricing cr-pointer family-ubuntu u-500 pd-content size color-b-soft">
+                        Team
+                    </span>
+                    <span class="marketplace cr-pointer family-ubuntu u-500 pd-content size color-b-soft">
+                        Blog
+                    </span>
+                    <span class="features cr-pointer family-ubuntu u-500 pd-content size color-b-soft">
+                        Careers
+                    </span>
+                  </div>
+
+                  <span class="connect cr-pointer family-ubuntu u-500 pd size color-b m-i">
+                    Connect<svg xmlns="http://www.w3.org/2000/svg" class="m-i connect-elem-down" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+                    <svg class="connect-elem-up" width="16" height="16" viewBox="0 0 24 24" fill="#f93434" xmlns="http://www.w3.org/2000/svg"><path d="M17.6569 16.2427L19.0711 14.8285L12.0001 7.75739L4.92896 14.8285L6.34317 16.2427L12.0001 10.5858L17.6569 16.2427Z" fill="currentColor"/></svg>
+
+                  </span>
+                  <div class="connect-elem flex-column">
+
+                    <span class="overview cr-pointer family-ubuntu u-500 pd-content size color-b-soft">
+                        Contact
+                    </span>
+                    <span class="pricing cr-pointer family-ubuntu u-500 pd-content size color-b-soft">
+                        Newsletter
+                    </span>
+                    <span class="marketplace cr-pointer family-ubuntu u-500 pd-content size color-b-soft">
+                        Linkedn
+                    </span>
+                  </div>
+                <!-- Contact
+                Newsletter
+                LinkedIn -->
+                <span class="login pd cr-pointer family-ubuntu u-500">
+                    Login
+                </span>
+                <span class="signup pd-r-l cr-pointer family-ubuntu u-700 color-w">
+                    Sign Up
+                </span>
+            </div>
+    
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="first-section">
+      <div class="editor-svg">
+          <div class="editor-title color-b family-overpass o-600 ">
+              Designed for the future
+          </div>
+
+          <div class="main-editor ">
+            <div class="main-editor-1 ">
+              <div class="editor-title-1 color-b family-overpass o-600">
+                Introducing an extensible editor
+              </div>
+              <div class="editor-title-1-text">
+                Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+                The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+                videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+                change the looks of a blog.
+              </div>
+            </div>
+            <div class="main-editor-2">
+              <div class="editor-title-2 color-b family-overpass o-600">
+                Robust content management
+              </div>
+              <div class="editor-title-2-text">
+                Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+                by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+
+
+    <div class="div first-mobile-section">
+      <div class="editor-mobile-svg">
+        <div class="editor-mobile-title color-b family-overpass o-600 ">
+            Designed for the future
+        </div>
+
+        <div class="first-svg-mobile">
+          <span></span>
+        </div>
+
+        <div class="main-mobile-editor ">
+          <div class="main-mobile-editor-1 ">
+            <div class="editor-title-1 color-b family-overpass o-600">
+              Introducing an extensible editor
+            </div>
+            <div class="editor-title-1-text">
+              Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+              The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+              videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+              change the looks of a blog.
+            </div>
+          </div>
+          <div class="main-mobile-editor-2">
+            <div class="editor-title-2 color-b family-overpass o-600">
+              Robust content management
+            </div>
+            <div class="editor-title-2-text">
+              Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+              by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="base-ground">
+      <div class="second-section">
+        <div class="editor-mobile flex">
+          <div class="container">
+            <div class="svg">
+            </div>
+          </div>
+            <div class="mobile-text ">
+                <div class="mobile-text-title family-overpass o-600">
+                  State of the Art Infrastructure
+                </div>
+                <div class="mobile-text-main family-ubuntu u-400">
+                  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+                  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="third-container">
+      <div class="third-section">
+          
+      </div>
+      <div class="third-flex">
+          <div class="section-main-1">
+              <div class="main-1-title family-overpass o-600  color-b">
+              Free, open, simple
+              </div>
+              <div class="main-1-text family-overpass o-300 ">
+              Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+              features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+              </div>
+          </div>
+          <div class="section-main-2">
+              <div class="main-2-title family-overpass o-600  color-b">
+                  Powerful tooling
+              </div>
+              <div class="main-2-text family-overpass o-300 ">
+              Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
+              </div>
+          </div>
+      </div>
+  </div>
+
+    
+
+    <div class="footer ">
+      <div class=" foot-elem-title family-ubuntu u-700 color-w">
+        Blogr
+      </div>
+      <div class="foot-products  ">
+        <span class="title family-ubuntu u-700 color-w">
+          Product
+        </span>
+        <span class="foot-elem family-ubuntu u-500">
+            Overview
+        </span>
+        <span class="foot-elem family-ubuntu u-500">
+          Pricing
+        </span>
+        <span class="foot-elem family-ubuntu u-500">
+          Marketplace
+        </span>
+        <span class="foot-elem family-ubuntu u-500">
+          Features
+        </span>
+        <span class="foot-elem family-ubuntu u-500">
+          Integrations
+        </span>
+      </div>
+      <div class="foot-products ">
+        <span class=" title family-ubuntu u-700 color-w">
+          Company
+        </span>
+        <span class="foot-elem family-ubuntu u-500">
+            About
+        </span>
+        <span class="foot-elem family-ubuntu u-500">
+            Team
+        </span>
+        <span class="foot-elem family-ubuntu u-500">
+          Blog
+        </span>
+        <span class="foot-elem family-ubuntu u-500">
+          Careers
+        </span>
+      </div>
+      <div class="foot-products ">
+        <span class=" title family-ubuntu u-700 color-w">
+          Connect
+        </span>
+        <span class="foot-elem family-ubuntu u-500">
+          Contact
+        </span>
+        <span class="foot-elem family-ubuntu u-500">
+          Newsletter
+        </span>
+        <span class="foot-elem family-ubuntu u-500">
+          LinkedIn 
+        </span>
+
+      </div>
+    </div>
+
+  
+
+  
+
+  <div class="attribution family-overpass o-300">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Onurcan Bülbül</a>.
+  </div> 
+
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+  
+
+</body>
+</html>
